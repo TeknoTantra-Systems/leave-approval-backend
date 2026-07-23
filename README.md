@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Leave Approval Backend
 
 Employee Leave Approval Workflow application built with Spring Boot and Camunda.
@@ -19,3 +20,6 @@ http://localhost:8080/swagger-ui.html
 
 ## Camunda Cockpit
 http://localhost:8080/camunda/app/cockpit/default/
+=======
+# leave-approval-backend
+>>>>>>> a79ff45c75430880edb1bdfea2b77fc9884b2f29
