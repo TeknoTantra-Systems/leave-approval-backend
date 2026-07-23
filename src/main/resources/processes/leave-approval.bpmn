@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:camunda="http://camunda.org/schema/1.0/bpmn"
+             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+             xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC"
+             xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI"
+             id="Definitions_1"
+             targetNamespace="http://camunda.org/examples">
+  <process id="leave_approval_process" name="Leave Approval Process" isExecutable="true">
+
+    <startEvent id="startEvent" name="Leave Request Submitted"></startEvent>
+
+    <sequenceFlow id="flow1" sourceRef="startEvent" targetRef="endEvent"></sequenceFlow>
+
+    <endEvent id="endEvent" name="Process Complete"></endEvent>
+
+  </process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="leave_approval_process">
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent" bpmnElement="startEvent">
+        <omgdc:Bounds height="30.0" width="30.0" x="100.0" y="163.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_BPMNShape_EndEvent" bpmnElement="endEvent">
+        <omgdc:Bounds height="28.0" width="28.0" x="300.0" y="164.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="BPMNEdge_flow1" bpmnElement="flow1">
+        <omgdi:waypoint x="130.0" y="178.0"/>
+        <omgdi:waypoint x="300.0" y="178.0"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>

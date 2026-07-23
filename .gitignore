@@ -1,0 +1,32 @@
+# Build output
+target/
+*.class
+*.jar
+*.war
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+.factorypath
+
+# Maven wrapper
+!.mvn/wrapper/maven-wrapper.jar
+
+# Logs
+*.log
+logs/
+
+# Environment / Secrets
+.env
+*.env.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker volumes
+pgdata/
